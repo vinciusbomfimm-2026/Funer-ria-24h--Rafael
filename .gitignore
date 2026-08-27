@@ -1,0 +1,14 @@
+# runtime/debug artifacts from local dev sessions
+*.pid
+*.log
+run.out.log
+run.err.log
+dev.out.log
+dev.err.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# editor scaffolding unrelated to this project
+.github/skills/

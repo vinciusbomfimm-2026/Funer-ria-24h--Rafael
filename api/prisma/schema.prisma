@@ -1,0 +1,96 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Get a free hosted Postgres database in seconds: `npx create-db`
+
+generator client {
+  provider     = "prisma-client"
+  output       = "../generated/prisma"
+  moduleFormat = "cjs"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+enum CanalContato {
+  telefone
+  whatsapp
+  formulario
+}
+
+enum CategoriaFaq {
+  emergencia
+  documentos
+  geral
+}
+
+enum TipoMidia {
+  imagem
+  video_vimeo
+}
+
+enum CategoriaMidia {
+  urna
+  caixao
+  velorio
+  institucional
+}
+
+model Contato {
+  id       String       @id @default(cuid())
+  nome     String
+  telefone String
+  mensagem String?
+  canal    CanalContato @default(formulario)
+  urgente  Boolean      @default(true)
+  criadoEm DateTime     @default(now())
+
+  @@map("contatos")
+}
+
+model Depoimento {
+  id        String   @id @default(cuid())
+  autor     String
+  texto     String
+  nota      Int      @default(5)
+  publicado Boolean  @default(true)
+  ordem     Int      @default(0)
+  criadoEm  DateTime @default(now())
+
+  @@map("depoimentos")
+}
+
+model Servico {
+  id               String   @id @default(cuid())
+  titulo           String
+  descricao        String
+  ctaLabel         String
+  whatsappMensagem String
+  slug             String   @unique
+  ordem            Int      @default(0)
+
+  @@map("servicos")
+}
+
+model FaqItem {
+  id        String       @id @default(cuid())
+  pergunta  String
+  resposta  String
+  categoria CategoriaFaq @default(geral)
+  ordem     Int          @default(0)
+
+  @@map("faq_itens")
+}
+
+model Midia {
+  id        String         @id @default(cuid())
+  tipo      TipoMidia
+  url       String
+  vimeoId   String?
+  legenda   String?
+  categoria CategoriaMidia
+  ordem     Int            @default(0)
+
+  @@map("midias")
+}

@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+:root {
+  --midnight: #0a192f;
+  --midnight-light: #112240;
+  --offwhite: #f3eee2;
+  --offwhite-muted: #ece4d3;
+  --gold: #c9a24b;
+  --gold-deep: #7a5a0d;
+  --clay: #8b5e3c;
+  --whatsapp: #25d366;
+  --whatsapp-deep: #128c7e;
+}
+
+@theme inline {
+  --color-midnight: var(--midnight);
+  --color-midnight-light: var(--midnight-light);
+  --color-offwhite: var(--offwhite);
+  --color-offwhite-muted: var(--offwhite-muted);
+  --color-gold: var(--gold);
+  --color-gold-deep: var(--gold-deep);
+  --color-clay: var(--clay);
+  --color-whatsapp: var(--whatsapp);
+  --color-whatsapp-deep: var(--whatsapp-deep);
+
+  --font-display: var(--font-fraunces);
+  --font-sans: var(--font-inter);
+}
+
+body {
+  background: var(--offwhite);
+  color: var(--midnight);
+}
+
+/* Espaço reservado para a Bottom Action Bar mobile não sobrepor conteúdo */
+@media (max-width: 767px) {
+  body {
+    padding-bottom: 72px;
+  }
+}
