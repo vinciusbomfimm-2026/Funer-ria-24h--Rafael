@@ -144,7 +144,7 @@ export const PASSOS = [
     icone: "phone" as const,
     titulo: "1. Fale com nosso Plantão",
     texto:
-      "Clique no WhatsApp ou ligue. Atendimento imediato 24/7. Um agente especializado vai acolher sua solicitação na mesma hora.",
+      "Clique no WhatsApp ou ligue. Atendimento imediato 24h. Um agente especializado vai acolher sua solicitação na mesma hora.",
   },
   {
     numero: 2,
@@ -183,7 +183,7 @@ export const PILARES = [
   {
     icone: "clock" as const,
     titulo: "Prontidão 24 Horas",
-    descricao: "Plantonistas disponíveis 24/7, incluindo feriados.",
+    descricao: "Plantonistas disponíveis 24h, incluindo feriados.",
   },
 ];
 
