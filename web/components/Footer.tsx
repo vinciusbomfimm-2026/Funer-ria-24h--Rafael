@@ -74,6 +74,11 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href="/#crematorios" className="hover:text-gold">
+                  Crematórios
+                </Link>
+              </li>
+              <li>
                 <Link href="/#avaliacoes" className="hover:text-gold">
                   Avaliações
                 </Link>
@@ -102,10 +107,13 @@ export default function Footer() {
           </div>
         </div>
 
-        <p className="mt-10 border-t border-white/10 pt-6 text-xs text-offwhite/50">
-          © {new Date().getFullYear()} Bela Vista - Serviço Funerário 24h. Todos os
-          direitos reservados.
-        </p>
+        <div className="mt-10 flex flex-col gap-1 border-t border-white/10 pt-6 text-xs text-offwhite/50 sm:flex-row sm:items-center sm:justify-between">
+          <p>
+            © {new Date().getFullYear()} Bela Vista - Serviço Funerário 24h. Todos os
+            direitos reservados.
+          </p>
+          <p>Feito por: Carlos Vinicius Bonfim</p>
+        </div>
       </div>
     </footer>
   );

@@ -192,7 +192,7 @@ export type Cemiterio = {
   nome: string;
   regiao: string;
   descricao: string;
-  imagem: string;
+  imagem?: string;
 };
 
 export const CEMITERIOS: Cemiterio[] = [
@@ -244,6 +244,191 @@ export const CEMITERIOS: Cemiterio[] = [
     regiao: "Zona Norte",
     descricao: "Jardins floridos e ambiente tranquilo, pensado para o conforto das famílias.",
     imagem: "/cemiterios/vila-nova-cachoeirinha.webp",
+  },
+  {
+    id: "santo-amaro",
+    nome: "Cemitério Santo Amaro",
+    regiao: "Zona Sul",
+    descricao: "Localizado na zona sul, com estrutura completa para sepultamento e cerimônias religiosas.",
+    imagem: "/cemiterios/santo-amaro.webp",
+  },
+  {
+    id: "jardim-do-pessego",
+    nome: "Cemitério Jardim do Pêssego",
+    regiao: "Zona Leste",
+    descricao: "Atendimento próximo às famílias da zona leste, com fácil acesso e boa infraestrutura.",
+    imagem: "/cemiterios/jardim-do-pessego.webp",
+  },
+  {
+    id: "gethsemani-anhanguera",
+    nome: "Cemitério Gethsêmani Anhanguera",
+    regiao: "Zona Oeste",
+    descricao: "Amplo espaço na região de Perus, ideal para cerimônias tranquilas e reservadas.",
+    imagem: "/cemiterios/gethsemani-anhanguera.webp",
+  },
+  {
+    id: "freguesia-do-o",
+    nome: "Cemitério Freguesia do Ó",
+    regiao: "Zona Norte",
+    descricao: "Cemitério tradicional da zona norte, com atendimento acolhedor para as famílias.",
+    imagem: "/cemiterios/freguesia-do-o.webp",
+  },
+  {
+    id: "dom-bosco",
+    nome: "Cemitério Dom Bosco",
+    regiao: "Zona Sul",
+    descricao: "Estrutura completa para velório e sepultamento, com fácil acesso na zona sul.",
+    imagem: "/cemiterios/dom-bosco.webp",
+  },
+  {
+    id: "cantareira",
+    nome: "Cemitério Cantareira",
+    regiao: "Zona Norte",
+    descricao: "Ambiente arborizado aos pés da Serra da Cantareira, propício para a despedida.",
+    imagem: "/cemiterios/cantareira.webp",
+  },
+  {
+    id: "lapa",
+    nome: "Cemitério Lapa",
+    regiao: "Zona Oeste",
+    descricao: "Cemitério histórico da zona oeste, com tradição e boa localização.",
+    imagem: "/cemiterios/lapa.webp",
+  },
+  {
+    id: "ordem-terceira-do-carmo",
+    nome: "Cemitério da Ordem Terceira do Carmo",
+    regiao: "Zona Sul",
+    descricao: "Espaço tradicional de valor histórico, com atendimento cuidadoso às famílias.",
+    imagem: "/cemiterios/ordem-terceira-do-carmo.webp",
+  },
+  {
+    id: "santissimo-sacramento",
+    nome: "Cemitério do Santíssimo Sacramento",
+    regiao: "Grande São Paulo",
+    descricao: "Atendimento na Grande São Paulo, com toda a documentação e logística resolvidas.",
+    imagem: "/cemiterios/santissimo-sacramento.webp",
+  },
+  {
+    id: "araca",
+    nome: "Cemitério do Araçá",
+    regiao: "Zona Oeste",
+    descricao: "Um dos cemitérios mais tradicionais da cidade, com arquitetura histórica na zona oeste.",
+    imagem: "/cemiterios/araca.webp",
+  },
+  {
+    id: "lajeado",
+    nome: "Cemitério do Lajeado",
+    regiao: "Zona Leste",
+    descricao: "Estrutura simples e acolhedora para as famílias da zona leste.",
+    imagem: "/cemiterios/lajeado.webp",
+  },
+  {
+    id: "penha",
+    nome: "Cemitério da Penha",
+    regiao: "Zona Leste",
+    descricao: "Localização de fácil acesso no bairro da Penha, zona leste.",
+    imagem: "/cemiterios/penha.webp",
+  },
+  {
+    id: "itaquera",
+    nome: "Cemitério Itaquera",
+    regiao: "Zona Leste",
+    descricao: "Amplo espaço na zona leste, com boa infraestrutura para cerimônias.",
+    imagem: "/cemiterios/itaquera.webp",
+  },
+  {
+    id: "saudade",
+    nome: "Cemitério da Saudade",
+    regiao: "Zona Leste",
+    descricao: "Ambiente tranquilo e arborizado, pensado para o conforto das famílias.",
+    imagem: "/cemiterios/saudade.webp",
+  },
+  {
+    id: "campo-grande",
+    nome: "Cemitério Campo Grande",
+    regiao: "Zona Sul",
+    descricao: "Estrutura completa para sepultamento na zona sul da cidade.",
+    imagem: "/cemiterios/campo-grande.webp",
+  },
+  {
+    id: "vila-mariana",
+    nome: "Cemitério Vila Mariana",
+    regiao: "Zona Sul",
+    descricao: "Cemitério tradicional da zona sul, com fácil acesso e boa infraestrutura.",
+    imagem: "/cemiterios/vila-mariana.webp",
+  },
+  {
+    id: "carmo",
+    nome: "Cemitério do Carmo",
+    regiao: "Zona Leste",
+    descricao: "Amplo espaço verde na zona leste, para uma despedida serena.",
+    imagem: "/cemiterios/carmo.webp",
+  },
+  {
+    id: "morumbi",
+    nome: "Cemitério Morumbi",
+    regiao: "Zona Sul",
+    descricao: "Localização de fácil acesso na zona sul, próximo a hospitais e residências.",
+    imagem: "/cemiterios/morumbi.webp",
+  },
+];
+
+export type Crematorio = {
+  id: string;
+  nome: string;
+  regiao: string;
+  descricao: string;
+  imagem: string;
+};
+
+export const CREMATORIOS: Crematorio[] = [
+  {
+    id: "bosque-da-paz",
+    nome: "Crematório Bosque da Paz",
+    regiao: "Grande São Paulo",
+    descricao:
+      "Estrutura ampla e reservada para cerimônias de cremação, com total conforto e privacidade para a família.",
+    imagem: "/crematorios/bosque-da-paz.webp",
+  },
+  {
+    id: "primaveras",
+    nome: "Crematório Primaveras",
+    regiao: "Zona Leste",
+    descricao:
+      "Salas de despedida modernas e acolhedoras, com atendimento cuidadoso em todas as etapas da cremação.",
+    imagem: "/crematorios/primaveras.webp",
+  },
+  {
+    id: "morumbi",
+    nome: "Crematório Morumbi",
+    regiao: "Zona Sul",
+    descricao:
+      "Localização de fácil acesso na zona sul, com infraestrutura completa para o processo de cremação.",
+    imagem: "/crematorios/morumbi.webp",
+  },
+  {
+    id: "memorial-parque-paulista",
+    nome: "Crematório Memorial Parque Paulista",
+    regiao: "Guarulhos / Grande São Paulo",
+    descricao:
+      "Amplo espaço arborizado e estrutura preparada para cerimônias de cremação na Grande São Paulo.",
+    imagem: "/crematorios/memorial-parque-paulista.webp",
+  },
+  {
+    id: "sao-paulo",
+    nome: "Crematório em São Paulo",
+    regiao: "São Paulo Capital",
+    descricao:
+      "Atendimento completo para cerimônias de cremação na capital paulista, com toda a documentação resolvida.",
+    imagem: "/crematorios/sao-paulo.webp",
+  },
+  {
+    id: "vila-alpina",
+    nome: "Crematório Vila Alpina",
+    regiao: "Zona Norte",
+    descricao:
+      "Espaço tradicional na zona norte, preparado para receber famílias com respeito e agilidade.",
+    imagem: "/crematorios/vila-alpina.webp",
   },
 ];
 

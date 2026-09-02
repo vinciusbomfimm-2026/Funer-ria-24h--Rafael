@@ -10,6 +10,7 @@ const NAV_LINKS = [
   { href: "/#quem-somos", label: "Quem Somos" },
   { href: "/#servicos", label: "Serviços" },
   { href: "/#cemiterios", label: "Cemitérios" },
+  { href: "/#crematorios", label: "Crematórios" },
   { href: "/#avaliacoes", label: "Avaliações" },
   { href: "/#faq", label: "FAQ" },
 ];

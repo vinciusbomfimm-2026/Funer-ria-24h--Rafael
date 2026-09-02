@@ -34,7 +34,10 @@ export default function RootLayout({
       lang="pt-BR"
       className={`${inter.variable} ${fraunces.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col font-sans">
+      <body
+        className="min-h-full flex flex-col font-sans"
+        suppressHydrationWarning
+      >
         <Header />
         <main className="flex-1">{children}</main>
         <Footer />

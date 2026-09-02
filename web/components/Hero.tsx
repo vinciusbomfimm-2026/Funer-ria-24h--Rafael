@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { ArchIcon, ChatIcon, PhoneIcon } from "@/components/icons";
+import { ChatIcon, PhoneIcon } from "@/components/icons";
 import { telLink, whatsappLink } from "@/lib/site";
 
 export default function Hero() {
@@ -20,9 +20,14 @@ export default function Hero() {
       <div className="absolute inset-0 bg-gradient-to-b from-midnight/95 via-midnight/90 to-midnight-light/95" />
 
       <div className="relative mx-auto max-w-3xl">
-        <div className="mx-auto flex h-24 w-20 items-center justify-center rounded-t-full rounded-b-md border border-gold/70">
-          <ArchIcon className="h-9 w-9 text-gold" />
-        </div>
+        <Image
+          src="/logo-bela-vista-gold.png"
+          alt="Bela Vista - Serviço Funerário 24h - São Paulo SP"
+          width={220}
+          height={220}
+          priority
+          className="mx-auto h-auto w-40 sm:w-48"
+        />
 
         <h1 className="mt-8 font-display text-3xl font-semibold leading-tight text-offwhite sm:text-5xl">
           Assistência Funerária 24h: Apoio completo no momento em que mais

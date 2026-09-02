@@ -3,6 +3,7 @@ import StepsSection from "@/components/StepsSection";
 import QuemSomosSection from "@/components/QuemSomosSection";
 import ServicesSection from "@/components/ServicesSection";
 import CemeteriesSection from "@/components/CemeteriesSection";
+import CrematoriesSection from "@/components/CrematoriesSection";
 import ServicosDetalhadosSection from "@/components/ServicosDetalhadosSection";
 import TestimonialsSection from "@/components/TestimonialsSection";
 import FaqAccordion from "@/components/FaqAccordion";
@@ -31,6 +32,9 @@ export default async function Home() {
       </Reveal>
       <Reveal>
         <CemeteriesSection />
+      </Reveal>
+      <Reveal>
+        <CrematoriesSection />
       </Reveal>
       <Reveal>
         <ServicosDetalhadosSection />
