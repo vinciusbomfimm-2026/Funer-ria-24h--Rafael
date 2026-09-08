@@ -107,13 +107,10 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="mt-10 flex flex-col gap-1 border-t border-white/10 pt-6 text-xs text-offwhite/50 sm:flex-row sm:items-center sm:justify-between">
-          <p>
-            © {new Date().getFullYear()} Bela Vista - Serviço Funerário 24h. Todos os
-            direitos reservados.
-          </p>
-          <p>Feito por: Carlos Vinicius Bonfim</p>
-        </div>
+        <p className="mt-10 border-t border-white/10 pt-6 text-xs text-offwhite/50">
+          © {new Date().getFullYear()} Bela Vista - Serviço Funerário 24h. Todos os
+          direitos reservados.
+        </p>
       </div>
     </footer>
   );
