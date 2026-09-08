@@ -220,7 +220,7 @@ export const CEMITERIOS: Cemiterio[] = [
   {
     id: "sao-luiz",
     nome: "Cemitério e Velório São Luiz",
-    regiao: "Zona Leste",
+    regiao: "Zona Sul",
     descricao: "Estrutura de velório e sepultamento integrada, com fácil acesso para as famílias.",
     imagem: "/cemiterios/sao-luiz.webp",
   },
@@ -276,8 +276,8 @@ export const CEMITERIOS: Cemiterio[] = [
   {
     id: "dom-bosco",
     nome: "Cemitério Dom Bosco",
-    regiao: "Zona Sul",
-    descricao: "Estrutura completa para velório e sepultamento, com fácil acesso na zona sul.",
+    regiao: "Zona Oeste",
+    descricao: "Estrutura completa para velório e sepultamento, com fácil acesso na zona oeste.",
     imagem: "/cemiterios/dom-bosco.webp",
   },
   {
@@ -297,7 +297,7 @@ export const CEMITERIOS: Cemiterio[] = [
   {
     id: "ordem-terceira-do-carmo",
     nome: "Cemitério da Ordem Terceira do Carmo",
-    regiao: "Zona Sul",
+    regiao: "Centro-SP",
     descricao: "Espaço tradicional de valor histórico, com atendimento cuidadoso às famílias.",
     imagem: "/cemiterios/ordem-terceira-do-carmo.webp",
   },
@@ -311,8 +311,8 @@ export const CEMITERIOS: Cemiterio[] = [
   {
     id: "araca",
     nome: "Cemitério do Araçá",
-    regiao: "Zona Oeste",
-    descricao: "Um dos cemitérios mais tradicionais da cidade, com arquitetura histórica na zona oeste.",
+    regiao: "Grande São Paulo",
+    descricao: "Um dos cemitérios mais tradicionais da cidade, com arquitetura histórica na Grande São Paulo.",
     imagem: "/cemiterios/araca.webp",
   },
   {
@@ -409,7 +409,7 @@ export const CREMATORIOS: Crematorio[] = [
   {
     id: "memorial-parque-paulista",
     nome: "Crematório Memorial Parque Paulista",
-    regiao: "Guarulhos / Grande São Paulo",
+    regiao: "Embu das Artes - SP",
     descricao:
       "Amplo espaço arborizado e estrutura preparada para cerimônias de cremação na Grande São Paulo.",
     imagem: "/crematorios/memorial-parque-paulista.webp",
@@ -425,9 +425,9 @@ export const CREMATORIOS: Crematorio[] = [
   {
     id: "vila-alpina",
     nome: "Crematório Vila Alpina",
-    regiao: "Zona Norte",
+    regiao: "Zona Leste",
     descricao:
-      "Espaço tradicional na zona norte, preparado para receber famílias com respeito e agilidade.",
+      "Espaço tradicional na zona leste, preparado para receber famílias com respeito e agilidade.",
     imagem: "/crematorios/vila-alpina.webp",
   },
 ];
